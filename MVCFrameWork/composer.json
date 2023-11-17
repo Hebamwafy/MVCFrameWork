@@ -1,0 +1,18 @@
+{
+    "name": "heba/mvc-frame-work",
+
+    "autoload": {
+        "psr-4": {
+            "app\\":"./"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "hebamwafy",
+            "email": "105353510+Hebamwafy@users.noreply.github.com"
+        }
+    ],
+
+    "require": {}
+}
