@@ -33,15 +33,15 @@ abstract class Model
                 }
                 if ($ruleName===self::RULE_MIN && strlen($value)<$rule ['min'])
                 {
-                    $this->addERrror($attributes, self::RULE_MIN , $rules);
+                    $this->addERrror($attributes, self::RULE_MIN , $rule);
                 }
                 if ($ruleName===self::RULE_MAX && strlen($value)>$rule ['max'])
                 {
-                    $this->addERrror($attributes, self::RULE_MAX, $rules);
+                    $this->addERrror($attributes, self::RULE_MAX, $rule);
                 }
                 if ($ruleName===self::RULE_MATCH && $value !== $this->{$rule['match']})
                 {
-                    $this->addERrror($attributes, self::RULE_MATCH, $rules);
+                    $this->addERrror($attributes, self::RULE_MATCH, $rule);
                 }
 
 
