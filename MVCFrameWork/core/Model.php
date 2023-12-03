@@ -56,8 +56,8 @@ abstract class Model
         $message=$this->errorMessage()[$rule]??'';
         foreach( $params as $key=>$value )
         {
-            $placeholder= '{'.$key. '}';
-            $message=str_replace("{$key}" , $value , $message);
+            $placeholder= '{' . $key . '}';
+            $message=str_replace($placeholder , $value , $message);
         }
         $this->errors[$attributes][]=$message;
     }
